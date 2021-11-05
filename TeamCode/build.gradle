@@ -28,10 +28,14 @@ dependencies {
     /*
      * Other Modules
      */
+    repositories {
+        mavenCentral()
+        maven { url = 'https://maven.brott.dev/' }
+    }
     implementation 'org.ftclib.ftclib:vision:1.2.0' // vision
     implementation 'org.ftclib.ftclib:core:1.2.1' // core
     implementation 'com.acmerobotics.roadrunner:core:0.5.3'
-    implementation('com.acmerobotics.dashboard:dashboard:0.4.0') {
+    implementation('com.acmerobotics.dashboard:dashboard:0.4.3') {
         exclude group: 'org.firstinspires.ftc'
     }
     implementation 'org.openftc:rev-extensions-2:1.2'
